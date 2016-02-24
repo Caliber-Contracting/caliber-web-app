@@ -1,0 +1,11 @@
+header
+   .navbar(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
+      img.navbar__image(data-bind="attr: { src: companyHeaderLogo }, click: function () { navigate('home') }")
+      .navbar_links
+        .navbar__link(data-bind=" click: function () { navigate('home') }") home
+        .navbar__link(data-bind=" click: function () { navigate('about') }") about
+        .navbar__link(data-bind=" click: function () { navigate('portfolio') }") portfolio
+        .navbar__link(data-bind=" click: function () { navigate('contact') }") contact
+
+.page(data-bind="css: {'page-home': activeUrl() == '/home'}")
+   .page-content(data-bind="child: 'main'")

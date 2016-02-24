@@ -1,0 +1,93 @@
+@require "mixins.css.styl"
+@require "sprites/sprites.css.styl"
+@require "sprites/spritesheet.css.styl"
+
+navbar-height = 200px
+
+/*------------------------------------*\
+   Base Layout
+\*------------------------------------*/
+html
+   height 100%
+   width 100%
+
+body
+   margin 0
+   padding 0
+   width 100%
+   background-color white
+   overflow scroll
+   // no-select()
+
+a
+   cursor pointer
+
+input:focus
+   outline none
+   border 1px solid gs-1-color
+
+/*------------------------------------*\
+   Navbar
+\*------------------------------------*/
+.navbar
+    position fixed
+    top contact-toolbar-height
+    height navbar-height
+    width 100%
+    z-index 10000
+    background-attachment fixed
+    background-repeat no-repeat
+    background-size cover
+    background-position 50% 0
+
+.navbar__image
+   display inline-block
+   height auto
+   width 80%
+   margin 35px 10%
+   cursor pointer
+
+.navbar_links
+    width 80%
+    margin auto 10%
+    display flex
+    justify-content space-between
+    align-items center
+    flex-wrap wrap
+    row-direction column
+
+.navbar__link
+    width 200px
+    min-width 176px
+    letter-spacing 12px
+    line-height 33px
+    text-align center
+    text-transform uppercase
+    font-primary-medium-custom(12px)
+    cursor pointer
+    color #D9E1E8
+
+.navbar__link--selected
+    color almost-black
+
+.navbar__information-search
+    display inline-block
+    width 16px
+    height 16px
+    line-height navbar-height
+    text-align center
+    color medium-gray-color
+
+/*------------------------------------*\
+   Page Content
+\*------------------------------------*/
+.page
+    position absolute
+    top (contact-toolbar-height + navbar-height)
+    width 100%
+
+.page-content
+    width 100%
+    overflow-x hidden
+    overflow-y scroll
+    background-color gs-0-color

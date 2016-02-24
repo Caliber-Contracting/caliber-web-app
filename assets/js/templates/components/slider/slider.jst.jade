@@ -1,0 +1,14 @@
+.slides
+   .slider-btn
+      span.sprite.icon-left-arrow(data-bind="click: function() { scrollBackward() }, visible: canSlide")
+   .slider
+      .slider-flex(data-bind="foreach: displayedSlides()")
+         .slide
+            .slide__image-container
+               img.slide-image(data-bind="attr: { src: image}")
+               
+            .slide__text-container
+               .slide__text-title(data-bind="text: title")
+               .slide__text-description(data-bind="text: description")
+   .slider-btn
+      span.sprite.icon-right-arrow(data-bind="click: function() { scrollForward() }, visible: canSlide")

@@ -1,0 +1,55 @@
+@require('./spritesheet.css.styl')
+@require('./spritesheet@2x.css.styl')
+
+sprite-base()
+   background-image url('/images/spritesheet.png')
+   background-repeat no-repeat
+
+.sprite
+   sprite-base()
+
+span.sprite
+   display inline-block
+   vertical-align middle
+
+/*------------------------------------*\
+   Shared
+\*------------------------------------*/
+.icon-phone
+   sprite(icon-phone)
+
+.icon-chat
+   sprite(icon-chat)
+
+.icon-globe
+   sprite(icon-globe)
+
+.icon-search
+   sprite(icon-search)
+
+.icon-facebook
+   sprite(icon-facebook)
+
+.icon-instagram
+   sprite(icon-instagram)
+
+.icon-twitter
+   sprite(icon-twitter)
+
+.icon-right-arrow
+   sprite(icon-right-arrow)
+
+.icon-left-arrow
+   sprite(icon-left-arrow)
+
+.icon-down-arrow
+  sprite(icon-down-arrow)
+
+/*------------------------------------*\
+   Retina
+\*------------------------------------*/
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 192dpi)
+   .sprite
+      background-image url('/images/spritesheet@2x.png')
+      retina-sprite-size()
