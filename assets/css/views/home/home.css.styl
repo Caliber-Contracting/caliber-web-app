@@ -1,11 +1,33 @@
 .home-page
     background-color white
+    overflow hidden
 
 .home__panel
-    position relative
-    height 831px
+    height 600px
     width 100%
-    background-size cover
     background-repeat no-repeat
-    background-position fixed
-    background-color #282C37
+    background-position center
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+    background-size cover
+
+.home__panel-header
+    position relative
+    width 100%
+    font-gotham-medium-custom(44px)
+    line-height 44px
+    letter-spacing 11px
+    text-transform uppercase
+    text-align center
+    top 35%
+    color white
+
+.home__panel-subheader
+    position relative
+    width 50%
+    margin auto 25%
+    line-height 23px
+    text-align center
+    font-style italic
+    color white
+    top 45%
+    font-gotham-light-custom(20px)

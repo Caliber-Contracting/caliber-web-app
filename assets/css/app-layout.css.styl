@@ -2,8 +2,6 @@
 @require "sprites/sprites.css.styl"
 @require "sprites/spritesheet.css.styl"
 
-navbar-height = 200px
-
 /*------------------------------------*\
    Base Layout
 \*------------------------------------*/
@@ -32,23 +30,32 @@ input:focus
 .navbar
     position fixed
     top contact-toolbar-height
-    height navbar-height
+    height 50px
     width 100%
     z-index 10000
-    background-repeat no-repeat
-    background-size cover
-    background-position 50% 0
+    padding-top 15px
+    padding-bottom 15px
+    -webkit-transition: background-color 700ms linear;
+    -moz-transition: background-color 700ms linear;
+    -o-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+    text-rendering optimizeLegibility
+    -webkit-font-smoothing antialiased
+
+.navbar-scrolled
+    background-color black
 
 .navbar__image
    display inline-block
-   height auto
-   width 80%
-   margin 35px 10%
+   margin-left 15px
+   height 50px
+   width 50px
    cursor pointer
 
 .navbar_links
-    width 80%
-    margin auto 10%
+    height 100%
+    width 100%
     display flex
     justify-content space-between
     align-items center
@@ -56,18 +63,18 @@ input:focus
     row-direction column
 
 .navbar__link
-    width 200px
-    min-width 176px
-    letter-spacing 12px
-    line-height 33px
+    min-width 75px
+    margin auto 50px
+    letter-spacing .2em
+    line-height 50px
     text-align center
     text-transform uppercase
-    font-primary-medium-custom(12px)
+    font-gotham-medium-custom(14px)
     cursor pointer
     color #D9E1E8
 
 .navbar__link--selected
-    color almost-black
+    color hsla(0, 0%, 100%, .2)
 
 .navbar__information-search
     display inline-block
@@ -82,7 +89,6 @@ input:focus
 \*------------------------------------*/
 .page
     position absolute
-    top navbar-height
     width 100%
 
 .page-content
@@ -90,3 +96,7 @@ input:focus
     overflow-x hidden
     overflow-y scroll
     background-color gs-0-color
+
+/*------------------------------------*\
+    Moblie View
+\*------------------------------------*/

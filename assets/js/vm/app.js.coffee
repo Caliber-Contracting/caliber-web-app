@@ -10,12 +10,18 @@ do ->
    class App extends PageContentViewModel
       constructor: ->
          super()
-         @companyHeaderLogo = ko.observable("http://i.imgur.com/ax9P5K9.png")
+         @companyHeaderLogo = ko.observable("http://i.imgur.com/EmhhPge.png")
          @backgroundImage = ko.observable("http://i.imgur.com/Ci6vp3K.png")
          @linkStatus = ko.observableArray([false, false, false, false, false])
 
          @activeUrl = ko.observable()
          @selectedPage = ko.observable()
+         $(window).scroll ->
+             if (window.location.pathname == "/home")
+                 if $(this).scrollTop() > 164
+                     $(".navbar").addClass("navbar-scrolled")
+                 else
+                     $(".navbar").removeClass("navbar-scrolled")
 
       setContent: (viewModel, childKey) ->
          $(window).scrollTop(0)

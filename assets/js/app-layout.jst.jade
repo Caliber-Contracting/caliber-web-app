@@ -1,11 +1,15 @@
 header
-   .navbar(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
-      img.navbar__image(data-bind="attr: { src: companyHeaderLogo }, click: function () { navigate('home') }")
+   .navbar
       .navbar_links
-        .navbar__link(data-bind=" click: function () { navigate('home') }") home
-        .navbar__link(data-bind=" click: function () { navigate('about') }") about
-        .navbar__link(data-bind=" click: function () { navigate('portfolio') }") portfolio
-        .navbar__link(data-bind=" click: function () { navigate('contact') }") contact
+        img.navbar__image(data-bind="attr: { src: companyHeaderLogo }, click: function () { navigate('home') }")
+        .navbar__link(data-bind="click: function () { navigate('home') }, \
+               css: {'navbar__link--selected': (selectedPage() == 'home')}") home
+        .navbar__link(data-bind=" click: function () { navigate('about') }, \
+               css: {'navbar__link--selected': (selectedPage() == 'about')}") about
+        .navbar__link(data-bind=" click: function () { navigate('portfolio') }, \
+               css: {'navbar__link--selected': (selectedPage() == 'portfolio')}") portfolio
+        .navbar__link(data-bind=" click: function () { navigate('contact') }, \
+               css: {'navbar__link--selected': (selectedPage() == 'contact')}") contact
 
 .page(data-bind="css: {'page-home': activeUrl() == '/home'}")
    .page-content(data-bind="child: 'main'")

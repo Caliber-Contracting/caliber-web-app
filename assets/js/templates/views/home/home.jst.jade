@@ -1,2 +1,5 @@
 .home-page
-    .home__panel(id='particles-js')
+    .home__panel(data-bind="style: { 'backgroundImage': 'url(' + companyHeroImage() + ')' }")
+        .home__panel-header(data-bind="text: companyHeroHeader")
+        .home__panel-subheader(data-bind="text: companyHeroSubHeader")
+    .home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
