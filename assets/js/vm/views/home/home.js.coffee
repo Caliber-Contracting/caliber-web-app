@@ -15,6 +15,11 @@ do ->
             @companyHeroSubHeader = ko.observable("")
             @companyHeroButton = ko.observable("")
 
+            # Second Picture Panel
+            @infoHeader = ko.observable("")
+            @infoSubHeader = ko.observable("")
+            
+
             # First Section
             @backgroundImage = ko.observable("")
 
@@ -24,7 +29,7 @@ do ->
             # Hero Section
             @companyHeroImage("http://i.imgur.com/Ci6vp3K.png")
             @companyHeroHeader("Welcome to CALIBER.")
-            @companyHeroSubHeader("A Student-driven Software Contracting Agency.")
+            @companyHeroSubHeader("The Premier Software Contracting Agency of Kansas.")
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
 
 
