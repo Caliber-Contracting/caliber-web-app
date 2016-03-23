@@ -54,7 +54,7 @@ do ->
             @partnersHeader("Our Partners")
 
         scrollDownYo: ->
-            $('html,body').animate { scrollTop: $('#second').offset().top }, 'slow'
+            $('html,body').animate { scrollTop: $('#second').offset().top - 75 }, 700
 
 
     define('vm.Home', Home)
