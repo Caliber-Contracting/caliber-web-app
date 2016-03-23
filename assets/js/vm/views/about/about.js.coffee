@@ -30,7 +30,7 @@ do ->
 
             @developerHeader("Our Current Developers")
             @developers([
-                {image:"http://i.imgur.com/MgNVncE.jpg", name:"Stefan Mendoza", description:"Stefan is a senior in Computer Science with internships at IBM-funded startups. He is currently working on the ProStats iPad App for PrepsKC", project: "PrepsKC ProStats"}
+                {image:"http://i.imgur.com/MgNVncE.jpg", name:"Stefan Mendoza", description:"Stefan is a senior in Computer Science with internships at IBM-funded startups. He is currently working on the ProStats iPad App for PrepsKC.", project: "PrepsKC ProStats"}
                 ])
 
     define('vm.About', About)
