@@ -2,6 +2,10 @@ header
    .navbar
       .navbar_links
         img.navbar__image(data-bind="attr: { src: companyHeaderLogo }, click: function () { navigate('home') }")
+        img.nav_image(data-bind="attr: { src: homeImage }, click: function () { navigate('home') }")
+        img.nav_image(data-bind="attr: { src: aboutImage }, click: function () { navigate('about') }")
+        img.nav_image(data-bind="attr: { src: portfolioImage }, click: function () { navigate('portfolio') }")
+        img.nav_image(data-bind="attr: { src: contactImage }, click: function () { navigate('contact') }")
         .navbar__link(data-bind="click: function () { navigate('home') }, \
                css: {'navbar__link--selected': (selectedPage() == 'home')}") home
         .navbar__link(data-bind=" click: function () { navigate('about') }, \

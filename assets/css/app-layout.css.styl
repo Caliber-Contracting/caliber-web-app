@@ -49,9 +49,17 @@ input:focus
 .navbar__image
    display inline-block
    margin-left 15px
-   height 50px
-   width auto
+   height auto
+   width 200px
    cursor pointer
+
+.nav_image
+    display none
+    margin auto
+    height auto
+    width 21px
+    min-width 15px
+    cursor pointer
 
 .navbar_links
     height 100%
@@ -62,9 +70,12 @@ input:focus
     flex-wrap wrap
     row-direction column
 
+.dropdown
+
+
 .navbar__link
-    min-width 75px
-    margin auto 50px
+    min-width 60px
+    margin auto 5%
     letter-spacing .2em
     line-height 50px
     text-align center
@@ -100,3 +111,10 @@ input:focus
 /*------------------------------------*\
     Moblie View
 \*------------------------------------*/
+@media screen and (max-width: 883px)
+    .navbar__link
+        display none
+    .nav_image
+        display inline-block
+    .navbar__image
+        width 40%
