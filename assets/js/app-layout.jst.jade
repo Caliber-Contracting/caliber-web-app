@@ -9,11 +9,11 @@ header
         .navbar__link(data-bind="click: function () { navigate('home') }, \
                css: {'navbar__link--selected': (selectedPage() == 'home')}") home
         .navbar__link(data-bind=" click: function () { navigate('about') }, \
-               css: {'navbar__link--selected': (selectedPage() == 'about')}") about
+               css: {'navbar__link--selected': (selectedPage() == 'about')}") who
         .navbar__link(data-bind=" click: function () { navigate('portfolio') }, \
-               css: {'navbar__link--selected': (selectedPage() == 'portfolio')}") portfolio
+               css: {'navbar__link--selected': (selectedPage() == 'portfolio')}") Work
         .navbar__link(data-bind=" click: function () { navigate('contact') }, \
-               css: {'navbar__link--selected': (selectedPage() == 'contact')}") contact
+               css: {'navbar__link--selected': (selectedPage() == 'contact')}") Get Started
 
 .page(data-bind="css: {'page-home': activeUrl() == '/home'}")
    .page-content(data-bind="child: 'main'")

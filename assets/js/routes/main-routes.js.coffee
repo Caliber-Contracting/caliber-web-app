@@ -2,6 +2,7 @@
 #= require lib/router.js.coffee
 #= require vm/app.js.coffee
 #= require vm/views/home/home.js.coffee
+#= require vm/views/about/about.js.coffee
 
 do ->
    MainRoutes = ->
@@ -11,6 +12,7 @@ do ->
       router = require("lib.Router.Instance")
 
       Home = require("vm.Home")
+      About = require("vm.About")
 
 
       # Add the base route.
@@ -19,6 +21,12 @@ do ->
          router.navigate "/home"
          home = new Home()
          app.setContent(home)
+
+      router.registerRoute "/about", ->
+          app.activeUrl("/about")
+          router.navigate "/about"
+          about = new About()
+          app.setContent(about)
 
         #  Leaving an example
     #   router.registerRoute "/why-sunlighten/vision", ->

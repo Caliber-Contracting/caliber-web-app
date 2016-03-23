@@ -21,7 +21,7 @@ do ->
          @activeUrl = ko.observable()
          @selectedPage = ko.observable()
          $(window).scroll ->
-             if (window.location.pathname == "/home")
+             if (true)
                  if $(this).scrollTop() > 164
                      $(".navbar").addClass("navbar-scrolled")
                  else

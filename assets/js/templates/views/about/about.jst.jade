@@ -1,0 +1,21 @@
+.about-page
+    .founder__panel
+        .founder__panel-header(data-bind="text: founderHeader")
+        .founder__panel-cards(data-bind="foreach: founders")
+            .founder__panel-card
+                .founder__panel-card__photo(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
+                    .clip
+                .founder__panel-card__content
+                    .founder__panel-card-title(data-bind="text: name")
+                    .founder__panel-card-position(data-bind="text: position")
+                    .founder__panel-card-description(data-bind="text: description")
+    .developer__panel
+        .developer__panel-header(data-bind="text: developerHeader")
+        .founder__panel-cards(data-bind="foreach: developers")
+            .founder__panel-card
+                .founder__panel-card__photo(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
+                    .clip
+                .founder__panel-card__content
+                    .founder__panel-card-title(data-bind="text: name")
+                    .founder__panel-card-position(data-bind="text: project")
+                    .founder__panel-card-description(data-bind="text: description")
