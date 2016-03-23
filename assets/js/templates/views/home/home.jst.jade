@@ -16,4 +16,16 @@
         .partner__panel-header(data-bind="text: partnersHeader")
         .logo__banner(data-bind="foreach: logoList")
             .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
-    .home__panel
+    .more__panel
+        .more__panel-content(data-bind="style: { 'backgroundImage': 'url(' + learnImage() + ')' }")
+            .more__panel-header(data-bind="text: busHeader")
+            .more__panel-header(data-bind="text: studentHeader")
+        .more__panel-content
+            .more__panel-subcontent
+                .more__panel-title(data-bind="text: businessTitle")
+                .more__panel-desc(data-bind="text: businessDesc")
+                .more__panel-link(data-bind="text: 'Get Started.'")
+            .more__panel-subcontent(data-bind="style: { 'backgroundColor': 'white' }")
+                .more__panel-title(data-bind="text: studentTitle")
+                .more__panel-desc(data-bind="text: studentDesc")
+                .more__panel-link(data-bind="text: 'Join our team today.'")
