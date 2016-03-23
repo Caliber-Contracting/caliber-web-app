@@ -2,11 +2,18 @@
     .home__panel(data-bind="style: { 'backgroundImage': 'url(' + companyHeroImage() + ')' }")
         .home__panel-header(data-bind="text: companyHeroHeader")
         .home__panel-subheader(data-bind="text: companyHeroSubHeader")
-    .home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
+        .home__arrow(data-bind="click: function () { scrollDownYo() }")
+            span.sprite.icon-down-arrow()
+    #second.home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
         .info__panel-content
             .info__panel-header(data-bind="text: infoHeader")
             .info__panel-subheader(data-bind="text: infoSubHeader")
-            .info__panel-subheader(data-bind="text: infoSubHeader")
+            .info__panel-subheader(data-bind="text: infoSubHeader2")
         .info__panel-content
-    .home__panel
+            .info__panel-image(data-bind="style: { 'backgroundImage': 'url(' + centerImage() + ')' }")
+            .info__panel-subheader(data-bind="text: specDesc")
+    .partners__panel
+        .partner__panel-header(data-bind="text: partnersHeader")
+        .logo__banner(data-bind="foreach: logoList")
+            .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
     .home__panel
