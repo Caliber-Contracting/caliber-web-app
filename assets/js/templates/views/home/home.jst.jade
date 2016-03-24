@@ -5,11 +5,11 @@
         .home__arrow(data-bind="click: function () { scrollDownYo() }")
             span.sprite.icon-down-arrow()
     #second.home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
-        .info__panel-content
+        #widen.info__panel-content
             .info__panel-header(data-bind="text: infoHeader")
             .info__panel-subheader(data-bind="text: infoSubHeader")
             .info__panel-subheader(data-bind="text: infoSubHeader2")
-        .info__panel-content
+        #hidden.info__panel-content
             .info__panel-image(data-bind="style: { 'backgroundImage': 'url(' + centerImage() + ')' }")
             .info__panel-subheader(data-bind="text: specDesc")
     .partners__panel
@@ -17,7 +17,7 @@
         .logo__banner(data-bind="foreach: logoList")
             .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
     .more__panel
-        .more__panel-content(data-bind="style: { 'backgroundImage': 'url(' + learnImage() + ')' }")
+        #hidden.more__panel-content(data-bind="style: { 'backgroundImage': 'url(' + learnImage() + ')' }")
             .more__panel-header(data-bind="text: busHeader")
             .more__panel-header(data-bind="text: studentHeader")
         .more__panel-content
