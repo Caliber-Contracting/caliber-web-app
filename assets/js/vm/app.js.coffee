@@ -18,6 +18,12 @@ do ->
          @contactImage = ko.observable("http://i.imgur.com/aMoqbrv.png")
          @linkStatus = ko.observableArray([false, false, false, false, false])
 
+         # Subnav
+         @subnavLinks = ko.observableArray()
+         @showingSubnavBackBtn = ko.observable(false)
+         @subnavBackBtnLink = ko.observable("")
+         @subnavBackBtnText = ko.observable("")
+
          @activeUrl = ko.observable()
          @selectedPage = ko.observable()
          $(window).scroll ->
@@ -36,6 +42,10 @@ do ->
             child.title(@title())
          else
             @setChild("main", viewModel)
+            @subnavLinks([])
+            @showingSubnavBackBtn(false)
+            @subnavBackBtnLink("")
+            @subnavBackBtnText("")
 
 
       setSubnav: (subnavLinks, options) ->

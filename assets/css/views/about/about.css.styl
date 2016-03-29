@@ -91,9 +91,11 @@ $panel-size = 750px
     box-shadow inset 0px 0px 4px gray
 
 .developer__panel
+    overflow visible
     display inline-block
     height $panel-size
     width 100%
+    max-height 1800px
     background-color white
 
 .developer__panel-header
@@ -109,6 +111,12 @@ $panel-size = 750px
     .founder__panel
         height $panel-size + 530px
 
+    .developer__panel
+        height $panel-size + 530px
+
 @media screen and (max-width: 662px)
     .founder__panel
         height $panel-size + 1060px
+
+    .developer__panel
+        height $panel-size + 530px

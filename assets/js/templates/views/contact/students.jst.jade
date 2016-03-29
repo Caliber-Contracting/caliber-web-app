@@ -1,0 +1,11 @@
+.students-page
+    .businesses-panel(data-bind="style: { 'backgroundImage': 'url(' + panelImage() + ')' }")
+        .contact-form
+            .contact-header(data-bind="text: panelHeader")
+            form(action="https://formspree.io/team@calibercontracting.co", method="POST")
+                input.contact-input(type="text", placeholder="Name", name="name")
+                input.contact-input(type="email", placeholder="Email", name="_replyto")
+                input.contact-input(type="phone", placeholder="Phone", name="phone")
+                input.contact-input(type="text", placeholder="Grade Level", name="gradelevel")
+                input.contact-input(type="text", placeholder="Major", name="major")
+                input.contact-submit(type="submit", value="Send")

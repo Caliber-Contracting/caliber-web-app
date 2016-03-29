@@ -14,6 +14,13 @@ header
                css: {'navbar__link--selected': (selectedPage() == 'portfolio')}") Work
         .navbar__link(data-bind=" click: function () { navigate('contact') }, \
                css: {'navbar__link--selected': (selectedPage() == 'contact')}") now
+   <!-- ko if: subnavLinks().length != 0-->
+   .subnav
+      a.subnav__back-btn(data-bind="text: subnavBackBtnText, attr: {href: subnavBackBtnLink} ")
+      .subnav__links(data-bind="foreach: subnavLinks")
+         a.subnav__link(data-bind="text: $data.name, attr: {href: $data.link}, \
+               css: {'subnav__link--selected': ($parent.activeUrl() == $data.link)}")
+   <!-- /ko -->
 
 .page(data-bind="css: {'page-home': activeUrl() == '/home'}")
    .page-content(data-bind="child: 'main'")

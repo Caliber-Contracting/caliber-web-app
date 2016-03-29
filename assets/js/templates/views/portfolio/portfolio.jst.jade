@@ -1,0 +1,11 @@
+.portfolio-page
+    .portfolio-panel
+        .portfolio-panel__header(data-bind="text: workHeader")
+        .companies(data-bind="foreach: companies")
+            .portfolio__panel-card
+                .portfolio__panel-left__content
+                    img.portfolio__panel-image(data-bind="attr: { src: image }")
+                    .portfolio__panel-subheader(data-bind="text: name")
+                .portfolio__panel-right__content
+                    .portfolio__panel-text(data-bind="text: description")
+                     

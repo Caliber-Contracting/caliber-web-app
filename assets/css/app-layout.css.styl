@@ -109,6 +109,54 @@ input:focus
     background-color gs-0-color
 
 /*------------------------------------*\
+   Sub Navbar
+\*------------------------------------*/
+
+.subnav
+   position fixed
+   top 80px
+   width 100%
+   height 32px
+   z-index 9999
+   background-color white
+   opacity .45
+   box-shadow inset 0px 2px 2px gray
+
+.subnav__back-btn
+   position absolute
+   top 0
+   display inline-block
+   height 32px
+   line-height 32px
+   margin-left 20px
+   text-transform uppercase
+   text-decoration none
+   color #DDDDDD
+   font-primary-medium-custom(12px)
+
+.subnav__links
+   position relative
+   display flex
+   height 32px
+   width 63%
+   justify-content space-around
+   left 0
+   right 0
+   margin 0 auto
+
+.subnav__link
+   display inline-block
+   height 32px
+   line-height 32px
+   text-transform uppercase
+   text-decoration none
+   color black
+   font-primary-medium-custom(12px)
+
+.subnav__link--selected
+   color #24AAFA
+
+/*------------------------------------*\
     Moblie View
 \*------------------------------------*/
 @media screen and (max-width: 883px)
