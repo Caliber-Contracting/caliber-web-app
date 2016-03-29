@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var debug = require('debug')('sunlighten-web-app:start');
+var debug = require('debug')('caliber-web-app:start');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 3000);

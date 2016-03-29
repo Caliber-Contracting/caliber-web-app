@@ -1,7 +1,7 @@
 {
-  "name": "sunlighten-web-app",
+  "name": "caliber-web-app",
   "version": "1.0.0",
-  "description": "This is the main frontend for Sunlighten.",
+  "description": "This is the main website & frontend for Caliber Contracting.",
   "engines": {
     "node": "4.1.1"
   },
