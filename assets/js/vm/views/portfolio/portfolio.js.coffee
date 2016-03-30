@@ -17,12 +17,12 @@ do ->
             @prepDemo()
 
         prepDemo: ->
-            @workHeader("Our Past Work")
+            @workHeader("Past Work")
             @companies([
                 {
                     image: "http://i.imgur.com/W4wozQe.png",
                     name: "PrepsKC ProStat",
-                    description: "ProStat is a live statistics app powered by PrepsKC for teams in the Kansas City metro area. Caliber has been taking PrepsKC's stats tool through massive changes over the past few months, revving the app up for the upcoming season."
+                    description: "ProStat is a live statistics app powered by PrepsKC for teams in the Kansas City metro area. CALIBER has been taking PrepsKC's stats tool through massive changes over the past few months, revving the app up for the upcoming season."
                 },
                 {
                     image: "http://i.imgur.com/4RFrot0.png",

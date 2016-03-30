@@ -47,7 +47,7 @@ do ->
 
             # First Section
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
-            @infoHeader("Student Driven.")
+            @infoHeader("Our Process")
             @infoSubHeader("We find the best and the brightest students and pair them with businesses of all sizes needing software development work.")
             @infoSubHeader2("Through an accelerated vetting process, we expose students to professional level software development in a handleful of fields at a level internships or school projects could never achieve.")
             @centerImage("http://i.imgur.com/W8yGg8P.png")
@@ -60,7 +60,7 @@ do ->
                 ])
 
             # Partners Section
-            @partnersHeader("Our Partners")
+            @partnersHeader("Partners")
 
             # Learn More
             @learnImage("http://i.imgur.com/nEVLFOz.jpg")
