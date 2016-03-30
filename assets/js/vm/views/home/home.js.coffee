@@ -67,9 +67,9 @@ do ->
             @busHeader("Are you a Business?")
             @studentHeader("Or a Student?")
             @businessTitle("Let's Start Your Next Project Today.")
-            @businessDesc("Just start by telling us a little about your project, budget, and any other details and we will get started! Our next steps usually include a follow up email, phone or video conference, then a project proposal. At the same time, we will be assembling your personalized development team. Follow the link below to begin.")
+            @businessDesc("First, give us a little about your project, budget, and any other details. Next steps include a follow up email, phone or video conference. Once we have a solid understanding of exactly what you want, we will deliver a project proposal. Throughout this process we will be assembling your personalized development team. Follow the link below to begin.")
             @studentTitle("Start Your Career Now, Not When You Graduate.")
-            @studentDesc("CALIBER was started by students, for students. If you are a driven, upper-level Computer Science, or related-major student we are looking for you. Our unique vetting process allows to to take on real-world paid projects, work with expierenced Project Managers, and build your resume faster than any internship could allow. Follow the link below to join CALIBER, and super-charge your future.")
+            @studentDesc("CALIBER was started by students, for students. If you are a driven, upper-level Computer Science or related-major student we are looking for you. Our unique vetting process allows us to take on real-world paid projects, work with expierenced Project Managers, and build your experience faster than any internship could. Follow the link below to join CALIBER, and super-charge your future.")
 
         scrollDownYo: ->
             $('html,body').animate { scrollTop: $('#second').offset().top - 75 }, 700

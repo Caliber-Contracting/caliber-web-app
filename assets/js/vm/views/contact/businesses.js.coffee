@@ -17,7 +17,7 @@ do ->
             @prepDemo()
 
         prepDemo: ->
-            @panelHeader("Let's Start Your Next Project Today.")
+            @panelHeader("Start Your Next Project Today.")
             @panelImage("http://i.imgur.com/nEVLFOz.jpg")
 
 
