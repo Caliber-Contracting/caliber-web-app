@@ -49,7 +49,7 @@ do ->
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
             @infoHeader("Our Process")
             @infoSubHeader("We find the best and the brightest students and pair them with businesses of all sizes needing software development work.")
-            @infoSubHeader2("Through an accelerated vetting process, we expose students to professional level software development in a handleful of fields at a level internships or school projects could never achieve.")
+            @infoSubHeader2("Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve.")
             @centerImage("http://i.imgur.com/W8yGg8P.png")
             @specDesc("We specialize in iOS, Web Applications, and custom software design.")
             @logoList([
