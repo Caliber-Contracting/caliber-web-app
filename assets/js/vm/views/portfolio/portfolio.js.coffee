@@ -30,9 +30,14 @@ do ->
                     description: "MyCutsTravel is a mobile application that allows Tahki Bannister, a barber from the Kansas City and Lawrence Areas, to record his clients cuts along with allowing them to pay and see a history of previous cuts."
                 },
                 {
-                    image: "http://i.imgur.com/mAoTYr0.png",
+                    image: "http://i.imgur.com/sMp6dyW.png",
                     name: "Bulletyn",
                     description: "Bulletyn is developing a smartphone app that’s designed to replace bulletin boards on college campuses by making it easier to get event listings, want ads and other information. CALIBER is working to expand functionality within the Bulletyn app, working with Bulletyn to improve their app's feature set and usability."
+                },
+                {
+                    image: "http://i.imgur.com/Zi8cNZe.png",
+                    name: "uVest",
+                    description: "uVest is a fintech startup looking to change the way people invest. CALIBER worked closely with the co-founders to design the first version of uVest's platform from basic wireframes to fully scaled design assets."
                 }
                 ])
 

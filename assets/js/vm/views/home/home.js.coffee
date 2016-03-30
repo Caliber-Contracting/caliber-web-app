@@ -55,8 +55,8 @@ do ->
             @logoList([
                 {image:"http://i.imgur.com/W4wozQe.png"},
                 {image:"http://i.imgur.com/YtukSTj.png"},
-                {image:"http://i.imgur.com/5MKCUGx.png"},
-                {image:"http://i.imgur.com/ApNrT24.png"}
+                {image:"http://i.imgur.com/ZUlTU6R.png"},
+                {image:"http://i.imgur.com/Xu0nHXc.png"}
                 ])
 
             # Partners Section
