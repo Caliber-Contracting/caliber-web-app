@@ -32,7 +32,7 @@ do ->
                 {
                     image: "http://i.imgur.com/mAoTYr0.png",
                     name: "Bulletyn",
-                    description: "Bulletyn is developing a smartphone app that’s designed to replace bulletin boards on college campuses by making it easier to get event listings, want ads and other information."
+                    description: "Bulletyn is developing a smartphone app that’s designed to replace bulletin boards on college campuses by making it easier to get event listings, want ads and other information. CALIBER is working to expand functionality within the Bulletyn app, working with Bulletyn to improve their app's feature set and usability."
                 }
                 ])
 
