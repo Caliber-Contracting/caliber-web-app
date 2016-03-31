@@ -1,5 +1,8 @@
 .home-page
-    .home__panel(data-bind="style: { 'backgroundImage': 'url(' + companyHeroImage() + ')' }")
+    .home__panel(data-bind="style: { }")
+        .video-div    
+            video.video("preload= 'auto' autoplay loop= 'loop'  poster: companyHeroVideoPoster")
+                source.video(data-bind="attr: {src: companyHeroVideo}")
         .home__panel-header(data-bind="text: companyHeroHeader")
         .home__panel-subheader(data-bind="text: companyHeroSubHeader")
         .home__arrow(data-bind="click: function () { scrollDownYo() }")

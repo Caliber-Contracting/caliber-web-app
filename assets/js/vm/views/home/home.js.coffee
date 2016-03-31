@@ -15,6 +15,8 @@ do ->
             @companyHeroHeader = ko.observable("")
             @companyHeroSubHeader = ko.observable("")
             @companyHeroButton = ko.observable("")
+            @companyHeroVideo = ko.observable("")
+            @companyHeroVideoPoster = ko.observable("")
 
             # First Section
             @backgroundImage = ko.observable("")
@@ -42,8 +44,10 @@ do ->
         prepDemo: ->
             # Hero Section
             @companyHeroImage("http://i.imgur.com/Ci6vp3K.png")
+            @companyHeroVideo("http://www.eclarify.com/videos/background.mp4")
             @companyHeroHeader("Welcome to CALIBER.")
             @companyHeroSubHeader("The Premier Software Contracting Agency of Kansas.")
+            @companyHeroVideoPoster("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg")
 
             # First Section
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
