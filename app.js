@@ -1,4 +1,5 @@
 require('coffee-script/register');
+require('newrelic');
 
 var express = require('express');
 var path = require('path');
@@ -7,6 +8,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ua = require('universal-analytics');
+
 
 var app = express();
 
