@@ -43,7 +43,7 @@ do ->
             # Hero Section
             @companyHeroImage("http://i.imgur.com/Ci6vp3K.png")
             @companyHeroHeader("Welcome to CALIBER.")
-            @companyHeroSubHeader("The Premier Software Contracting Agency of Kansas.")
+            @companyHeroSubHeader("Bridging the Gap Between Talent and Industry")
 
             # First Section
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
