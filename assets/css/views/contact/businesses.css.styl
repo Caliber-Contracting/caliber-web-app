@@ -86,12 +86,19 @@ input.contact-input
     .businesses-panel
         overflow hidden
         width 100vw
-        height 100vh
+        min-height auto
+        max-height 900px
 
     .contact-form
         display block
         width 90vw
-        height 80vh
-        margin 20vh 5vw 0 5vw
+        height auto
+        margin 125px 5vw 15px 5vw
         background-color white
         box-shadow 0px 0px 4px gray
+
+@media screen and (max-width: 375px)
+    .businesses-panel
+        overflow hidden
+        width 100vw
+        height auto
