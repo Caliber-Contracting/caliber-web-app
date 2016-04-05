@@ -39,7 +39,7 @@ do ->
                     image:"http://i.imgur.com/D9uIg4p.png",
                     name:"Evan Nichols",
                     description:"Evan has done design work for many KU organizations and Kansas City Startups, he also has worked with Garmin in the past. He runs recruitment and manages our student matching and vetting processes.",
-                    position: "Recruitment"
+                    position: "Lead Developer"
                 }
                 ])
 
