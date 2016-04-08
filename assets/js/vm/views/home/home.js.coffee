@@ -16,7 +16,10 @@ do ->
             @companyHeroSubHeader = ko.observable("")
             @companyHeroButton = ko.observable("")
 
-            # First Section
+            # Process Section
+            @processHeader = ko.observable("")
+            @processSections = ko.observableArray([])
+
             @backgroundImage = ko.observable("")
             @infoHeader = ko.observable("")
             @infoSubHeader = ko.observable("")
@@ -44,6 +47,26 @@ do ->
             @companyHeroImage("http://i.imgur.com/Ci6vp3K.png")
             @companyHeroHeader("Welcome to CALIBER.")
             @companyHeroSubHeader("Bridging the Gap Between Talent and Industry")
+
+            # Process Section
+            @processHeader("Process")
+            @processSections([
+                {
+                image:"http://i.imgur.com/xzQx1Aw.png",
+                title:"Source ",
+                description:"We find the best and the brightest students and pair them with businesses of all sizes needing software development work."
+                },
+                {
+                image:"http://i.imgur.com/omt6meW.png",
+                title:"Expose",
+                description:"Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve."
+                },
+                {
+                image:"http://i.imgur.com/KFl1XQm.png",
+                title:"Connect",
+                description:"We find the best and the brightest students and pair them with businesses of all sizes needing software development work."
+                }
+            ])
 
             # First Section
             @backgroundImage("http://i.imgur.com/C66PAZR.jpg")

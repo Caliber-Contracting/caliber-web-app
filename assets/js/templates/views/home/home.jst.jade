@@ -4,28 +4,42 @@
         .home__panel-subheader(data-bind="text: companyHeroSubHeader")
         .home__arrow(data-bind="click: function () { scrollDownYo() }")
             span.sprite.icon-down-arrow()
-    #second.home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
-        #widen.info__panel-content
-            .info__panel-header(data-bind="text: infoHeader")
-            .info__panel-subheader(data-bind="text: infoSubHeader")
-            .info__panel-subheader(data-bind="text: infoSubHeader2")
-        #hidden.info__panel-content
-            .info__panel-image(data-bind="style: { 'backgroundImage': 'url(' + centerImage() + ')' }")
-            .info__panel-subheader(data-bind="text: specDesc")
-    .partners__panel
-        .partner__panel-header(data-bind="text: partnersHeader")
-        .logo__banner(data-bind="foreach: logoList")
-            .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
-    .more__panel
-        #hidden.more__panel-content(data-bind="style: { 'backgroundImage': 'url(' + learnImage() + ')' }")
-            .more__panel-header(data-bind="text: busHeader")
-            .more__panel-header(data-bind="text: studentHeader")
-        .more__panel-content
-            .more__panel-subcontent
-                .more__panel-title(data-bind="text: businessTitle")
-                .more__panel-desc(data-bind="text: businessDesc")
-                .more__panel-link(data-bind="text: 'Get Started.', attr: { href: '/contact' }")
-            .more__panel-subcontent(data-bind="style: { 'backgroundColor': 'white' }")
-                .more__panel-title(data-bind="text: studentTitle")
-                .more__panel-desc(data-bind="text: studentDesc")
-                .more__panel-link(data-bind="text: 'Join our team today.', attr: { href: '/contact/students' }")
+    .process__panel
+        .process__panel-header(data-bind="text: processHeader")
+        .process__panel-sections(data-bind="foreach: processSections")
+            .process__panel-section
+                img.process__panel-image(data-bind="attr: { src: image }")
+                .process__panel-title(data-bind="text: title")
+                .process__panel-description(data-bind="text: description")
+        
+        
+        
+        
+        
+        
+        
+    //- .home__panel(data-bind="style: { 'backgroundImage': 'url(' + backgroundImage() + ')' }")
+    //-     #widen.info__panel-content
+    //-         .info__panel-header(data-bind="text: infoHeader")
+    //-         .info__panel-subheader(data-bind="text: infoSubHeader")
+    //-         .info__panel-subheader(data-bind="text: infoSubHeader2")
+    //-     #hidden.info__panel-content
+    //-         .info__panel-image(data-bind="style: { 'backgroundImage': 'url(' + centerImage() + ')' }")
+    //-         .info__panel-subheader(data-bind="text: specDesc")
+    //- .partners__panel
+    //-     .partner__panel-header(data-bind="text: partnersHeader")
+    //-     .logo__banner(data-bind="foreach: logoList")
+    //-         .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
+    //- .more__panel
+    //-     #hidden.more__panel-content(data-bind="style: { 'backgroundImage': 'url(' + learnImage() + ')' }")
+    //-         .more__panel-header(data-bind="text: busHeader")
+    //-         .more__panel-header(data-bind="text: studentHeader")
+    //-     .more__panel-content
+    //-         .more__panel-subcontent
+    //-             .more__panel-title(data-bind="text: businessTitle")
+    //-             .more__panel-desc(data-bind="text: businessDesc")
+    //-             .more__panel-link(data-bind="text: 'Get Started.', attr: { href: '/contact' }")
+    //-         .more__panel-subcontent(data-bind="style: { 'backgroundColor': 'white' }")
+    //-             .more__panel-title(data-bind="text: studentTitle")
+    //-             .more__panel-desc(data-bind="text: studentDesc")
+    //-             .more__panel-link(data-bind="text: 'Join our team today.', attr: { href: '/contact/students' }")

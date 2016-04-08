@@ -32,7 +32,57 @@
     font-style italic
     color white
     top 45%
-    font-primary-medium-custom(20px)
+    font-primary-light-custom(20px)
+
+.process__panel
+    width 100%
+    background-color #D3D2D3
+    overflow auto
+
+.process__panel-header
+    width 100%
+    font-primary-regular-custom(44px)
+    color #2E323A
+    margin 50px auto
+    line-height 44px
+    text-transform uppercase
+    text-align center
+    letter-spacing 10px
+
+.process__panel-sections
+    width 100%
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-around
+    align-items center
+
+.process__panel-section
+    width 300px
+    display flex
+    flex-wrap wrap
+    justify-content center
+
+.process__panel-image
+    width 200px
+    height auto
+
+.process__panel-title
+    text-align center
+    margin 10px auto
+    color #2E323A
+    font-primary-light-custom(22px)
+    width 100%
+    line-height 22px
+    color #206F8B
+
+.process__panel-description
+    width 100%
+    margin 10px auto
+    font-primary-light-custom(14px)
+    line-height 21px
+    text-align center
+    color #2E323A
 
 .info__panel-content
     float left
@@ -108,7 +158,7 @@
     color white
     text-align center
     margin 0 auto
-    top 70%
+    top 65%
     cursor pointer
 
 .more__panel
@@ -193,3 +243,13 @@
     .info__panel-subheader
         width 80%
         margin 40px 10% auto 10%
+
+    .process__panel-sections
+        flex-direction column
+        justify-content center
+        width 100%
+
+    .process__panel-section
+        justify-content center
+        width 100%
+        margin 20px auto
