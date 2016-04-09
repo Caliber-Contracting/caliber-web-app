@@ -17,11 +17,11 @@
             .info__panel-content-left
                 .info__panel-header(data-bind="text: studentHeader")
                 .info__panel-subheader(data-bind="text: studentDesc")
-                .info__panel-button(data-bind="text: studentButtonLabel")
+                .info__panel-button(data-bind="text: studentButtonLabel, attr: { href: '/contact/students' }")
             .info__panel-content-right
                 .info__panel-header(data-bind="text: busHeader")
                 .info__panel-subheader(data-bind="text: businessDesc")
-                .info__panel-button(data-bind="text: businessButtonLabel")
+                .info__panel-button(data-bind="text: businessButtonLabel, attr: { href: '/contact' }")
     .partners__panel
         .logo__banner(data-bind="foreach: logoList")
             .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")    
