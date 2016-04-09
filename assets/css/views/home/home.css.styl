@@ -93,8 +93,10 @@
 .info__panel
     width 100%
     height 100vh
+    overflow hidden
     background center
     background-attachment fixed
+    display flex
 
 .info__panel-content-sections
     width 100%
@@ -103,28 +105,20 @@
     flex-wrap wrap
     justify-content space-around
     align-items center
-    vertical-align middle
-    padding-top 20%
 
 .info__panel-content-left
-/*    float left
-    position relative */
     display flex
     flex-wrap wrap
     justify-content center
     width 400px
     background rgba(34,34,34,0.50)
-    /*margin 10% 8% 0*/
 
 .info__panel-content-right
-/*    float left
-    position relative */
     display flex
     flex-wrap wrap
     justify-content center
     width 400px
     background rgba(34,34,34,0.50)
-    /*margin 10% 8% */
 
 .info__panel-header
     font-primary-regular-custom(2.5em)
@@ -169,8 +163,6 @@
     padding 5%
     cursor pointer
 
-
-
 .info__panel-button:hover
     background-color white
     color rgba(34,34,34,0.50)
@@ -180,14 +172,16 @@
     color white
 
 .partners__panel
+    overflow hidden
     width 100%
-    height 250px
-
+    height 200px
+    display flex
+    align-items center
 
 .logo__banner
     position relative
     width 100%
-    height 150px
+    height auto
     background-color white
     opacity: .8
     display flex
@@ -195,8 +189,6 @@
     align-items center
     flex-wrap wrap
     row-direction column
-    margin-top 4%
-
 
 .partner__panel-header
     font-primary-regular-custom(44px)
@@ -221,8 +213,8 @@
     color white
     text-align center
     margin 0 auto
-    top 65%
     cursor pointer
+    top 80vh
 
 .more__panel
     width 100%
@@ -316,3 +308,9 @@
         justify-content center
         width 100%
         margin 20px auto
+
+    .info__panel
+        height auto
+
+    .home__arrow
+        top 60vh

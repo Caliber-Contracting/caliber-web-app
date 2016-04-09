@@ -58,7 +58,7 @@ do ->
                 description:"We find the best and the brightest students and pair them with businesses of all sizes needing software development work."
                 },
                 {
-                image:"http://i.imgur.com/omt6meW.png",
+                image:"http://i.imgur.com/L5zGPNx.png",
                 title:"Expose",
                 description:"Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve."
                 },
