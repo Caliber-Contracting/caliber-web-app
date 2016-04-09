@@ -11,7 +11,15 @@
                 img.process__panel-image(data-bind="attr: { src: image }")
                 .process__panel-title(data-bind="text: title")
                 .process__panel-description(data-bind="text: description")
-        
+    .info__panel(data-bind="style: { 'backgroundImage': 'url(' + infoBackgroundImage() + ')' }")
+        .info__panel-content-left
+            .info__panel-header(data-bind="text: studentHeader")
+            .info__panel-subheader(data-bind="text: studentDesc")
+            .info__panel-button(data-bind="text: studentButtonLabel")
+        .info__panel-content-right
+            .info__panel-header-right(data-bind="text: busHeader")
+            .info__panel-subheader(data-bind="text: businessDesc")
+            .info__panel-button(data-bind="text: businessButtonLabel")
         
         
         

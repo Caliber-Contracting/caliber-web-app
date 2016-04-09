@@ -20,7 +20,7 @@ do ->
             @processHeader = ko.observable("")
             @processSections = ko.observableArray([])
 
-            @backgroundImage = ko.observable("")
+            @infoBackgroundImage = ko.observable("")
             @infoHeader = ko.observable("")
             @infoSubHeader = ko.observable("")
             @infoSubHeader2 = ko.observable("")
@@ -39,7 +39,8 @@ do ->
             @businessDesc = ko.observable("")
             @studentTitle = ko.observable("")
             @studentDesc = ko.observable("")
-
+            @studentButtonLabel = ko.observable("")
+            @businessButtonLabel = ko.observable("")
             @prepDemo()
 
         prepDemo: ->
@@ -68,13 +69,16 @@ do ->
                 }
             ])
 
-            # First Section
-            @backgroundImage("http://i.imgur.com/C66PAZR.jpg")
+            #Info Section
+            @infoBackgroundImage("http://i.imgur.com/C66PAZR.jpg")
             @infoHeader("Our Process")
             @infoSubHeader("We find the best and the brightest students and pair them with businesses of all sizes needing software development work.")
             @infoSubHeader2("Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve.")
             @centerImage("http://i.imgur.com/W8yGg8P.png")
             @specDesc("We specialize in iOS, Web Applications, and custom software design.")
+
+            # Partners Section
+            @partnersHeader("Partners")
             @logoList([
                 {image:"http://i.imgur.com/W4wozQe.png"},
                 {image:"http://i.imgur.com/YtukSTj.png"},
@@ -82,18 +86,17 @@ do ->
                 {image:"http://i.imgur.com/Xu0nHXc.png"}
                 ])
 
-            # Partners Section
-            @partnersHeader("Partners")
 
             # Learn More
             @learnImage("http://i.imgur.com/nEVLFOz.jpg")
-            @busHeader("Are you a Business?")
-            @studentHeader("Or a Student?")
+            @busHeader("To Startup")
+            @studentHeader("From Student")
             @businessTitle("Let's Start Your Next Project Today.")
-            @businessDesc("First, give us a little about your project, budget, and any other details. Next steps include a follow up email, phone or video conference. Once we have a solid understanding of exactly what you want, we will deliver a project proposal. Throughout this process we will be assembling your personalized development team. Follow the link below to begin.")
-            @studentTitle("Start Your Career Now, Not When You Graduate.")
-            @studentDesc("CALIBER was started by students, for students. If you are a driven, upper-level Computer Science or related-major student we are looking for you. Our unique vetting process allows us to take on real-world paid projects, work with expierenced Project Managers, and build your experience faster than any internship could. Follow the link below to join CALIBER, and super-charge your future.")
-
+            @businessDesc("Let's Get To Work")
+            @studentTitle("")
+            @studentDesc("Start Your Career Now")
+            @studentButtonLabel("Join Us")
+            @businessButtonLabel("Learn More")
         scrollDownYo: ->
             $('html,body').animate { scrollTop: $('#second').offset().top - 75 }, 700
 
