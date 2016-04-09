@@ -15,7 +15,7 @@
 .home__panel-header
     position relative
     width 100%
-    font-primary-ultra-light-custom(44px)
+    font-primary-light-custom(44px)
     line-height 44px
     letter-spacing 11px
     text-transform uppercase
@@ -29,10 +29,9 @@
     margin auto 25%
     line-height 23px
     text-align center
-    font-style italic
     color white
     top 45%
-    font-primary-light-custom(20px)
+    font-primary-ultra-light-custom(20px)
 
 .process__panel
     width 100%
@@ -66,7 +65,11 @@
     justify-content center
 
 .process__panel-image
-    width 200px
+    width 100%
+    height 100%
+
+.process__panel-image-wrap
+    width 100%
     height auto
 
 .process__panel-title
@@ -95,46 +98,33 @@
     float left
     position relative
     width 30%
-    height 100%
-    /*background rgba(34,34,34,0.40)*/
+    background rgba(34,34,34,0.40)
+    margin 10% 10% 0
 
 .info__panel-content-right
     float right
     position relative
     width 30%
-    height 100%
-    /*background rgba(34,34,34,0.40)*/
+    background rgba(34,34,34,0.40)
+    margin 10% 10% 0
 
 .info__panel-header
-    font-primary-regular-custom(56px)
+    font-primary-regular-custom(3em)
     line-height 44px
     letter-spacing 5.5px
     text-transform uppercase
-    text-align left
-    margin 40% 20% auto 10%
-    width 70%
+    text-align center
+    margin 4%
     color white
     text-shadow 0 0 2px black
 
-.info__panel-header-right
-    font-primary-regular-custom(56px)
-    line-height 44px
-    letter-spacing 5.5px
-    text-transform uppercase
-    text-align right
-    margin 40% 20% auto 10%
-    width 70%
-    color white
-    text-shadow 0 0 2px black
 
 .info__panel-subheader
     font-primary-light-custom(20px)
     line-height 20px
     text-align center
-    margin 40px 20% auto 10%
     color white
     text-shadow 0 0 3px gray
-    width 70%
 
 .info__panel-image
     width 60%
@@ -150,7 +140,7 @@
     color white
 
 .info__panel-button
-    margin 0 auto
+    margin 15% auto
     border 2px solid white
     font-primary-regular-custom(30px)
     color white
@@ -169,6 +159,7 @@
     width 100%
     height 250px
 
+
 .logo__banner
     position relative
     width 100%
@@ -180,10 +171,12 @@
     align-items center
     flex-wrap wrap
     row-direction column
+    margin-top 4%
 
 
 .partner__panel-header
-    font-primary-ultra-light-custom(44px)
+    font-primary-regular-custom(44px)
+    color #2E323A
     line-height 100px
     letter-spacing 5.5px
     text-transform uppercase
