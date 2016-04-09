@@ -22,8 +22,6 @@ do ->
 
             @infoBackgroundImage = ko.observable("")
             @infoHeader = ko.observable("")
-            @infoSubHeader = ko.observable("")
-            @infoSubHeader2 = ko.observable("")
             @centerImage = ko.observable("")
             @specDesc = ko.observable("")
 
@@ -55,25 +53,24 @@ do ->
                 {
                 image:"http://i.imgur.com/xzQx1Aw.png",
                 title:"Source ",
-                description:"We find the best and the brightest students and pair them with businesses of all sizes needing software development work."
+                description:"We source students with industry experience who have experimented with technology outside of their core curriculum and most importantly exude a dedication to leveling up their skill set"
                 },
                 {
                 image:"http://i.imgur.com/L5zGPNx.png",
-                title:"Expose",
-                description:"Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve."
+                title:"Empower",
+                description:"Through an accelerated vetting process, we expose developers to professional software engineering in a handful of fields in greater depth than internships or school projects provide"
                 },
                 {
                 image:"http://i.imgur.com/KFl1XQm.png",
                 title:"Connect",
-                description:"We find the best and the brightest students and pair them with businesses of all sizes needing software development work."
+                description:"Proven developers are paired with clients in need of work ranging from refactoring existing products to design and development of something new"
                 }
             ])
 
             #Info Section
             @infoBackgroundImage("http://i.imgur.com/C66PAZR.jpg")
             @infoHeader("Our Process")
-            @infoSubHeader("We find the best and the brightest students and pair them with businesses of all sizes needing software development work.")
-            @infoSubHeader2("Through an accelerated vetting process, we expose students to professional level software development in a handful of fields at a level internships or school projects could never achieve.")
+
             @centerImage("http://i.imgur.com/W8yGg8P.png")
             @specDesc("We specialize in iOS, Web Applications, and custom software design.")
 
