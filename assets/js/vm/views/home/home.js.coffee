@@ -89,7 +89,7 @@ do ->
 
             # Learn More
             @learnImage("http://i.imgur.com/nEVLFOz.jpg")
-            @busHeader("Startups")
+            @busHeader("Clients")
             @studentHeader("Students")
             @businessTitle("Let's Start Your Next Project Today.")
             @businessDesc("Let's Get To Work")
