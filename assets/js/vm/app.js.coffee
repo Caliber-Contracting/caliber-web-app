@@ -10,7 +10,7 @@ do ->
    class App extends PageContentViewModel
       constructor: ->
          super()
-         @companyHeaderLogo = ko.observable("http://i.imgur.com/n0nC8GT.png")
+         @companyHeaderLogo = ko.observable("http://i.imgur.com/UONmb5C.png")
          @backgroundImage = ko.observable("http://i.imgur.com/Ci6vp3K.png")
          @homeImage = ko.observable("http://i.imgur.com/sURn7P1.png")
          @aboutImage = ko.observable("http://i.imgur.com/n40SwZQ.png")
