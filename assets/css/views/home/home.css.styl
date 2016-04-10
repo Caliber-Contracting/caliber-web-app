@@ -15,14 +15,14 @@
 .home__panel-header
     position relative
     width 100%
-    font-primary-light-custom(44px)
+    font-primary-regular-custom(44px)
     line-height 44px
     letter-spacing 11px
     text-transform uppercase
     text-align center
     top 35%
     color white
-    text-shadow 0px 0px 5px black
+    text-shadow 0px 0px 8px #2E323A
 
 .home__panel-subheader
     position relative
@@ -32,7 +32,8 @@
     text-align center
     color white
     top 45%
-    font-primary-ultra-light-custom(20px)
+    font-primary-light-custom(20px)
+    text-shadow 0px 0px 7px #2E323A
 
 .process__panel
     width 100%
@@ -274,6 +275,47 @@
     line-height 14px
     text-align left
     margin 25px 20% auto 10%
+
+.hidden
+    display none
+
+.homepage-hero-module
+    border-right none
+    border-left none
+    position relative
+
+.no-video .video-container video,
+.touch .video-container video
+    display none
+
+.no-video .video-container .poster,
+.touch .video-container .poster
+    display block !important
+
+.video-container
+    position relative
+    bottom 0%
+    left 0%
+    height 100%
+    width 100%
+    overflow hidden
+    background #000
+    .poster
+        img
+            width 100%
+            bottom 0
+            position absolute
+    .filter
+        z-index 100
+        position absolute
+        background rgba(0, 0, 0, 0.4)
+        width 100%
+    video
+        position absolute
+        z-index 0
+        bottom 0
+        &.fillWidth
+            width 100%
 
 @media screen and (max-width: 995px)
     #fill-in

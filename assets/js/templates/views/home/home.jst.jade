@@ -1,9 +1,22 @@
 .home-page
-    .home__panel(data-bind="style: { 'backgroundImage': 'url(' + companyHeroImage() + ')' }")
-        .home__panel-header(data-bind="text: companyHeroHeader")
-        .home__panel-subheader(data-bind="text: companyHeroSubHeader")
-        .home__arrow(data-bind="click: function () { scrollDownYo() }")
-            span.sprite.icon-down-arrow()
+    .homepage-hero-module
+        .video-container
+            .filter
+            video.fillWidth(autoplay='', loop='')
+                source(src='/media/Going-Places.mp4', type='video/mp4')
+                | Your browser does not support the video tag. I            suggest you upgrade your browser.
+                source(src='/media/Going-Places.webm', type='video/webm')
+                | Your browser does not support the video tag. I suggest you upgrade your browser.
+            .home__panel-header(data-bind="text: companyHeroHeader")
+            .home__panel-subheader(data-bind="text: companyHeroSubHeader")
+            .home__arrow(data-bind="click: function () { scrollDownYo() }")
+                span.sprite.icon-down-arrow()
+            .poster.hidden
+                img(src='/media/Going-Places.jpg', alt='')
+                .home__panel-header(data-bind="text: companyHeroHeader")
+                .home__panel-subheader(data-bind="text: companyHeroSubHeader")
+                .home__arrow(data-bind="click: function () { scrollDownYo() }")
+                        span.sprite.icon-down-arrow()
     #second.process__panel
         .process__panel-header(data-bind="text: processHeader")
         .process__panel-sections(data-bind="foreach: processSections")
