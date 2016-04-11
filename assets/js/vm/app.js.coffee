@@ -33,6 +33,11 @@ do ->
                  else
                      $(".navbar").removeClass("navbar-scrolled")
 
+      scrollUp: ->
+         $("html, body").animate({
+            scrollTop: 0
+         }, 600);
+
       setContent: (viewModel, childKey) ->
          $(window).scrollTop(0)
          assertArgs(arguments, PageContentViewModel, optional(String))
