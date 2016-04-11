@@ -41,11 +41,12 @@ do ->
             @businessButtonLabel = ko.observable("")
             @prepDemo()
 
-            #jQuery is required to run this code
             scaleVideoContainer = ->
-                height = $(window).height() + 5
-                unitHeight = parseInt(height) + 'px'
-                $('.homepage-hero-module').css 'height', unitHeight
+                # height = $(window).height() + 5
+                # console.log("height " + height)
+                # unitHeight = parseInt(height) + 'px'
+                # console.log("unitheight " + unitHeight)
+                # $('.homepage-hero-module').css 'height', unitHeight
                 return
 
             initBannerVideoSize = (element) ->
