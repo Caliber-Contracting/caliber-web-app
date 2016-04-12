@@ -68,7 +68,7 @@ do ->
                 {
                     image:"http://i.imgur.com/C8Qa070.png",
                     name:"Lei Wang",
-                    description:"LeI is a senior computer science student at the university of kansas with a minor in business. Knows both Chinese and English. Primary focuses will be web design and mobile development."
+                    description:"LeI is a senior computer science student at the University of Kansas with a minor in business. Knows both Chinese and English. Primary focuses will be web design and mobile development."
                 },
                 {
                     image:"http://i.imgur.com/C8Qa070.png",
