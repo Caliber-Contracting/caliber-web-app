@@ -7,21 +7,27 @@ $panel-size = 750px
 
 .founder__panel
     display inline-block
-    height $panel-size
-    max-height 1800px
+    overflow auto
     width 100%
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    row-direction column
 
 .founder__panel-header
     width 100%
     font-primary-regular-custom(44px)
     color #2E323A
-    margin 150px auto auto auto
+    margin 80px auto auto auto
     text-align center
     line-height 53px
 
 .founder__panel-cards
-    height 500px
-    width 100%
+    height auto
+    overflow hidden
+    margin 20px 10%
+    width 80%
     display flex
     justify-content space-around
     align-items center
@@ -44,6 +50,7 @@ $panel-size = 750px
     background-repeat no-repeat
     background-position center
     background-size cover
+    background-color white
 
 .founder__panel-card__content
     width 100%
@@ -68,7 +75,7 @@ $panel-size = 750px
 .founder__panel-card-description
     font-primary-light-custom(14px)
     line-height 16px
-    text-align justify
+    text-align left
     width 100%
     margin 15px 10% auto 10%
     color white
@@ -90,33 +97,17 @@ $panel-size = 750px
     border-radius 5px
     box-shadow inset 0px 0px 4px gray
 
-.developer__panel
-    overflow visible
-    display inline-block
-    height $panel-size
-    width 100%
-    max-height 1800px
-    background-color #BEBBBB
 
-.developer__panel-header
-    width 100%
-    font-primary-ultra-light-custom(53px)
-    color black
-    margin 80px auto auto auto
-    text-align center
-    line-height 53px
-
-
-@media screen and (max-width: 995px)
-    .founder__panel
-        height $panel-size + 530px
-
-    .developer__panel
-        height $panel-size + 530px
-
-@media screen and (max-width: 662px)
-    .founder__panel
-        height $panel-size + 1060px
-
-    .developer__panel
-        height $panel-size + 530px
+// @media screen and (max-width: 995px)
+//     .founder__panel
+//         height $panel-size + 530px
+//
+//     .developer__panel
+//         height $panel-size + 530px
+//
+// @media screen and (max-width: 662px)
+//     .founder__panel
+//         height $panel-size + 1060px
+//
+//     .developer__panel
+//         height $panel-size + 530px

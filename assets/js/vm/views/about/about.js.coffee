@@ -60,6 +60,21 @@ do ->
                     name:"Wes Hoffman",
                     description:"Wes is a graduating Bachelor of Science undergraduate in Computer Science. His primarily interests and specialities is in the realm of data analytics, machine learning, and distributed computing."
                 },
+                {
+                    image:"http://i.imgur.com/m5E9h5h.jpg",
+                    name:"Noah Benham",
+                    description:"Noah Benham is a SELF Engineering Fellow at the University of Kansas and owner of a local computer repair business. Noah is an experienced developer for Desktop, Web and iOS."
+                },
+                {
+                    image:"http://i.imgur.com/C8Qa070.png",
+                    name:"Lei Wang",
+                    description:"Lorem ipsum dolor sit amet, idque evertitur qui ne, munere graecis repudiare eu ius. At sale volutpat eum, detraxit erroribus ne eum. An his adhuc nemore vocibus. Mea omnium tritani ut. Ex cibo impetus his. An sea debet sonet praesent."
+                },
+                {
+                    image:"http://i.imgur.com/C8Qa070.png",
+                    name:"Paydon Wilson",
+                    description:"He is a graduating senior at KU studying Linguistics and Computer Science. He is currently working with a team to create a new eye tracking product that uses electrooculogram(EOG) instead of traditional pupil tracking. Last summer as an intern at Arris he focused on creating and maintaining automated tests using the Protractor framework."
+                },
                 ])
 
     define('vm.About', About)
