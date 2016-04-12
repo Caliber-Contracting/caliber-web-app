@@ -8,11 +8,66 @@
     height 100vh
 
 .portfolio__panel-content
-    top 80px
-    height 100% - 80px
+    position relative
+    height 100%
     width 100%
 
-// .portfolio__panel-
+.portfolio__panel-arrow
+    position fixed
+    bottom 0
+    z-index 50000
+    width 100%
+    height 10%
+    display flex
+    justify-content center
+    align-items center
+
+.clickable
+    cursor pointer
+
+.portfolio__panel-demo
+    width 40%
+    float left
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+
+.portfolio__panel-image__container
+    height auto
+    width 90%
+
+.portfolio__panel-text
+    width 60%
+    float left
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+
+.portfolio__panel-text__header
+    width 100%
+    font-primary-regular-custom(44px)
+    color white
+    line-height 44px
+    margin 0px auto 50px auto
+    text-align center
+
+.portfolio__panel-text__description
+    width 60%
+    font-primary-light-custom(16px)
+    color white
+    line-height 24px
+    margin auto 20%
+
+.app__badge
+    margin 20px 20%
+
+.spacer
+    width 100%
+
 //
 // .portfolio-panel__header
 //     width 100%

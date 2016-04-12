@@ -1,7 +1,7 @@
 header
    .navbar
       .navbar_links
-        img.navbar__image(data-bind="attr: { src: companyHeaderLogo }, click: function () { navigate('home'); scrollUp() }")
+        img.navbar__image(data-bind="attr: { src: activeUrl() == '/portfolio' ? companyHeaderLogoAlt : companyHeaderLogo }, click: function () { navigate('home'); scrollUp() }")
         img.nav_image(data-bind="attr: { src: homeImage }, click: function () { navigate('home') }")
         img.nav_image(data-bind="attr: { src: aboutImage }, click: function () { navigate('about') }")
         img.nav_image(data-bind="attr: { src: portfolioImage }, click: function () { navigate('portfolio') }")

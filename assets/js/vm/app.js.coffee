@@ -11,6 +11,7 @@ do ->
       constructor: ->
          super()
          @companyHeaderLogo = ko.observable("http://i.imgur.com/UONmb5C.png")
+         @companyHeaderLogoAlt = ko.observable("http://i.imgur.com/cLrApSu.png")
          @backgroundImage = ko.observable("http://i.imgur.com/Ci6vp3K.png")
          @homeImage = ko.observable("http://i.imgur.com/sURn7P1.png")
          @aboutImage = ko.observable("http://i.imgur.com/n40SwZQ.png")
@@ -26,9 +27,10 @@ do ->
 
          @activeUrl = ko.observable()
          @selectedPage = ko.observable()
+
          $(window).scroll ->
              if (true)
-                 if $(this).scrollTop() > 164
+                 if $(this).scrollTop() > 164 && (window.location.pathname != "/portfolio")
                      $(".navbar").addClass("navbar-scrolled")
                  else
                      $(".navbar").removeClass("navbar-scrolled")

@@ -9,6 +9,17 @@
     //-                 .portfolio__panel-subheader(data-bind="text: name")
     //-                 .portfolio__panel-text(data-bind="text: description")
     .portfolio__panel
-        .portfolio__panel-content
-        
+        .portfolio__panel-content(data-bind="foreach: companies")
+            .portfolio__panel-demo
+                img.portfolio__panel-image__container(data-bind="attr: { src: demo, id: 'prefix_' + $index() }")
+            .portfolio__panel-text
+                .spacer
+                    .portfolio__panel-text__header(data-bind="text: name")
+                    .portfolio__panel-text__description(data-bind="text: description")
+                    <!-- ko if: link.length != 0-->
+                    a.app__badge(data-bind="attr: {href: link}", style='display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;')
+                    <!-- /ko -->
+        .portfolio__panel-arrow
+            span.clickable.sprite.icon-down-arrow(data-bind="click: function () { scrollLéPanel(1) }")
+                
         
