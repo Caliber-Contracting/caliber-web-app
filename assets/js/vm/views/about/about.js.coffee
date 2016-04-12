@@ -68,7 +68,7 @@ do ->
                 {
                     image:"http://i.imgur.com/C8Qa070.png",
                     name:"Lei Wang",
-                    description:"Lorem ipsum dolor sit amet, idque evertitur qui ne, munere graecis repudiare eu ius. At sale volutpat eum, detraxit erroribus ne eum. An his adhuc nemore vocibus. Mea omnium tritani ut. Ex cibo impetus his. An sea debet sonet praesent."
+                    description:"LeI is a senior computer science student at the university of kansas with a minor in business. Knows both Chinese and English. Primary focuses will be web design and mobile development."
                 },
                 {
                     image:"http://i.imgur.com/C8Qa070.png",
