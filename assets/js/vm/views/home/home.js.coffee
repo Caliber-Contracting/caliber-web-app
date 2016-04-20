@@ -130,7 +130,7 @@ do ->
             @partnersHeader("Partners")
             @logoList([
                 {image:"http://i.imgur.com/W4wozQe.png"},
-                {image:"http://i.imgur.com/YtukSTj.png"},
+                {image:"http://i.imgur.com/B31VNB1.png"},
                 {image:"http://i.imgur.com/ZUlTU6R.png"},
                 {image:"http://i.imgur.com/Xu0nHXc.png"}
                 ])

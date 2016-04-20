@@ -30,11 +30,11 @@ do ->
                     description: "ProStat is a live statistics app powered by PrepsKC for teams in the Kansas City metro area. CALIBER has been taking PrepsKC's stats tool through massive changes over the past few months, revving the app up for the upcoming season."
                 },
                 {
-                    demo: "http://i.imgur.com/xEXhxGr.png",
+                    demo: "http://i.imgur.com/e61CVoD.png",
                     link:"",
-                    image: "http://i.imgur.com/4RFrot0.png",
-                    name: "MyCutsTravel",
-                    description: "MyCutsTravel is a mobile application that allows Tahki Bannister, a barber from the Kansas City and Lawrence Areas, to record his clients cuts along with allowing them to pay and see a history of previous cuts."
+                    image: "http://i.imgur.com/e61CVoD.png",
+                    name: "Haller",
+                    description: "Haller is a mobile application for first year students intended to increase university retention rates. Haller focuses on assisting students in developing a better sense of belonging by enabling the opportunity to create, engage, discover, and be."
                 },
                 {
                     demo: "http://i.imgur.com/3PMI6Wj.png",

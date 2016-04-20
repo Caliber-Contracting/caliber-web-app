@@ -1,4 +1,5 @@
 .home-page
+    script(src='/vendor/coverr.js')
     .home__panel(data-bind="style: { 'backgroundImage': 'url(' + companyHeroImage() + ')' }")
         .home__panel-header(data-bind="text: companyHeroHeader")
         .home__panel-subheader(data-bind="text: companyHeroSubHeader")
@@ -12,6 +13,8 @@
                 | Your browser does not support the video tag. I            suggest you upgrade your browser.
                 source(src='/media/Going-Places.webm', type='video/webm')
                 | Your browser does not support the video tag. I suggest you upgrade your browser.
+            .poster.hidden
+                img(src='/media/Going-Places.jpg', alt='')
             .home__panel-header(data-bind="text: companyHeroHeader")
             .home__panel-subheader(data-bind="text: companyHeroSubHeader")
             .home__arrow(data-bind="click: function () { scrollDownYo() }")
@@ -42,4 +45,4 @@
                 .info__panel-button(data-bind="text: businessButtonLabel, attr: { href: '/contact/businesses' }")
     .partners__panel
         .logo__banner(data-bind="foreach: logoList")
-            .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }")
+            .logo_item(data-bind="style: { 'backgroundImage': 'url(' + image + ')' }, attr: { href: '/portfolio' }")
