@@ -1,0 +1,53 @@
+extend layout
+block content
+  #wrapper
+    // Sidebar
+    #sidebar-wrapper
+      ul.sidebar-nav
+        li.sidebar-brand
+          a(href='#')
+            | Executive
+        li(data-bind="foreach: executives")
+          a(data-bind="text: $data, click: $root.goToStaff")
+          
+        li.sidebar-brand
+          a(href='#')
+            | Development
+        li(data-bind="foreach: developers")
+          a(data-bind="text: $data")
+            
+    // /#sidebar-wrapper
+    // Page Content
+    #page-content-wrapper
+      .container-fluid(data-bind="with: chosenStaffData")
+        .row
+          .col-md-6
+            h1(data-bind="text:$data.name")
+        .row
+          .col-md-6
+            img.img-responsive(data-bind = "attr:{src:$data.image, alt:'Responsive image'}")
+        p
+        .row
+          .col-md-3 
+            p.text-primary Github:
+            p(data-bind="text:$data.github")
+            p.text-primary Email: 
+            p(data-bind="text:$data.email")
+            p.text-primary Phone: 
+            p(data-bind="text:$data.phone")
+            p
+            p.text-primary(data-bind="text:$data.motto")
+          .col-md-3 
+            p.text-primary(data-bind="text:$data.description") 
+
+    // /#page-content-wrapper
+  // /#wrapper
+  // jQuery
+  script(src='/bootstrap/js/jquery.js')
+
+  // Bootstrap Core JavaScript
+  script(src='/bootstrap/js/bootstrap.min.js')
+
+  //include the ViewModel js file
+  script(type='text/javascript', src='/javascripts/vmSidebar.js')
+
